@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    vertical-align: top;
+}
+
+h2{
+    font-size: 12px;
+    margin: 20px 0px 10px 20px;
+}
+
+h3{
+    font-size: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+    color: black;
+}
+
+h4{
+    color: black;
+    font-size: 10px;
+}
+
+p{
+    font-size: 8px;
+}
+
+.HomePage{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.Carousel{
+    position: relative;
+}
+
+.Search{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    z-index: 2;
+}
+
+.Search h1{
+    font-size: 14px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.Search p{
+    font-size: 8px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.Search-input{
+    border-radius: .5em;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 4px;
+    width: 150px;
+    font-size: 6px;
+}
+
+.Search-btn{
+    background-color: #FF5B00;
+    border-radius: .3em;
+    width: 30px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    right: 36px;
+    color: white; 
+    font-size: 8px;
+    text-align: center;
+}
+
+.Search-btn:hover{
+    cursor: pointer;
+}
+
+.Discount{
+    width: 368px;
+}
+
+.discount-group{
+    display: flex; 
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.discount-group .allow{
+    color: gray;
+    margin: 5px;
+}
+
+.discount-group a{
+    text-align: center;
+}
+
+.discount-pic{
+    
+    display: flex;
+}
+
+.discount-group img{
+    width: 90%;
+    border-radius: .5em;
+}
+
+.feature-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:10px;
+    padding: 0px 30px;
+}
+
+.feature-group img{
+    width: 20%
+}
+
+.activity-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activity-card{
+    width: 170px;
+    margin: 0 auto 15px auto;
+    text-decoration: none;
+    border-radius: 1em;
+    outline: .5px solid rgb(183, 183, 183);
+}
+
+.activity-card:hover{
+    position: relative;
+    top:-5px;
+}
+
+.activity-group img{
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.activity-pic{
+    position: relative;
+}
+
+.activity-pic p{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+}
+
+.activity-pic p span{
+    background-color: #FF5B00;
+    color: white;
+    padding: 3px;
+    border-radius: .3em;
+    margin-right: 3px;
+}
+
+.activity-text{
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.activity-text .location{
+    margin: 0;
+}
+
+.activity-text h3{
+    margin: 2px 0;
+}
+
+.activity-text p{
+    color: rgb(86, 86, 86);
+}
+
+.activity-text .star span{
+    color: #FF5B00;
+}
+
+.activity-text .star{
+    margin: 5px 0;
+}
+
+.activity-text .label span{
+    padding: 3px;
+    border-radius: .5em;
+    background-color: rgb(228, 228, 228);
+    margin: 0 5px 0 0;
+}
+
+.activity-text .price{
+    margin: 0;
+}
+
+.activity-text .price span{
+    color: black;
+    font-weight: 700;
+}
+
+.more{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.more a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 10px;
+    outline: .5px solid black;
+    padding: 3px 50px;
+    border-radius: .3em;
+}
+
+.Ranking{
+    width: 368px;
+    margin: auto;
+}
+
+.ranking-group{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.ranking-card{
+    width: 90%;
+    outline: .5px solid rgb(183, 183, 183);
+    position: relative;
+    text-decoration: none;
+    margin: 10px auto;
+    border-radius: .5em;
+}
+
+.ranking-card:hover{
+    top: -5px;
+    box-shadow:  0 3px 20px 3px rgb(183, 183, 183);
+    transition: .5s;
+}
+
+.ranking-card img{
+    width: 100%;
+}
+
+.ranking-card h3{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.ranking-content{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.ranking-content-pic{
+    position: relative;
+    margin-right: 5px;
+}
+
+.ranking-content-pic .ranking-pic{
+    width: 100%;
+    border-radius: .5em;
+    margin-right: 10px;
+}
+
+.ranking-content-pic .ranking-icon{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    z-index: 1;
+    border-radius: .5em 0 0 0;
+}
+
+.ranking-describe{
+    display: flex;
+    width: 180px;    
+}
+
+.ranking-describe img{
+    width: 10px;
+    margin: 0 3px;
+}
+
+.ranking-describe p{
+    color: #FF5B00;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.recommend-group{
+    display: flex;
+}
+
+.recommend-card{
+    margin: auto;
+    width: 170px;
+    position: relative;
+    border-radius: .5em;
+}
+
+.Recommend img{
+    width: 100%;
+    border-radius: .5em;
+}
+
+.recommend-card h3{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: white;
+}
+
+.recommend-card p{
+    width: 50%;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    color: white;
+}
+
+.recommend-card label{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: black;
+    font-size: 8px;
+    background-color: white;
+    padding: 5px 10px;   
+    border-radius: .3em;
+}
+
+.where-group{
+    display: flex;
+}
+
+.where-card{
+    margin: auto;
+    width: 80px;
+    position: relative;
+    border-radius: .5em;
+}
+
+.where-card img{
+    width: 100%;
+    border-radius: .5em;
+    filter: brightness(70%);
+}
+
+.where-card p{
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    color: white;
+}
+
+.Strategy{
+    margin: auto;
+    width: 368px;
+}
+
+.strategy-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.strategy-card{
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    outline: .5px solid rgb(183, 183, 183);
+    border-radius: .5em;
+    margin: 10px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.strategy-pic img{
+    width: 50%;
+}
+
+.strategy-card label{
+    outline: .5px solid black;
+    padding: 5px 10px;
+    border-radius: .5em;
+    font-size: 8px;
+}
+
+.Partner .Media{
+    width: 368px;
+    margin: auto;
+}
+
+.partner-group, .media-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-group a{
+    width: 15%;
+    margin: 5px;
+    filter: grayscale(100%);
+    display: flex;
+    align-items: center;
+}
+
+.partner-group a:hover{
+    filter: grayscale(0%);
+    transition: .3s;
+}
+
+.partner-group img, .media-group img{
+    width: 100%;
+}
+
+.media-group a{
+    width: 15%;
+    margin: 5px;
+    filter: grayscale(100%);
+    display: flex;
+    align-items: center;
+}
+
+.media-group a:hover{
+    filter: grayscale(0%);
+    transition: .3s;
+}
+
+.popular-group a{
+    list-style: none;
+    display: inline-block;
+    font-size: 8px;
+    border-right: 1px solid gray;
+    padding-right: 5px;  
+    text-decoration: none;
+    color: gray;
+}
+
+.popular-group a:nth-last-child(1){
+    border-right: 0px solid gray;
+}
+
+.popular-group h3{
+    margin-left: 30px;
+}
+
+@media screen and (min-width:1200px) {
+    h2{
+        font-size: 32px;
+        margin: 50px 0 30px 50px;
+        font-weight: 700;
+    }
+
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    h4{
+        font-size: 18px;
+    }
+    
+    p{
+        font-size: 16px;
+    }
+
+    .Search h1{
+        font-size: 40px;
+    }
+
+    .Search p{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    
+    .Search-input{
+        width: 550px;
+        font-size: 16px;
+    }
+    
+    .Search-btn{
+        width: 80px;
+        height: 25px;
+        right: 90px;
+        font-size: 16px;
+    }
+
+    .Discount{
+        width: 1200px;
+    }
+    
+    .discount-group .allow{
+        margin: 10px;
+        font-size: 40px;
+    }
+
+    .feature-group{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap:30px;
+    }
+    
+    .feature-group img{
+        width: 30%
+    }
+    
+    .activity-card{
+        width: 250px;
+    }
+
+    .activity-card h3{
+        font-size: 16px;
+    }
+
+    .activity-card p{
+        font-size: 12px;
+    }
+    
+    .more{
+        margin: 20px auto;
+    }
+    
+    .more a{
+        font-size: 20px;
+    }
+
+    .Ranking{
+        width: 1200px;
+    }
+    
+    .ranking-card{
+        width: 45%;
+    }
+    
+    .ranking-card h3{
+        top: 40px;
+        left: 30px;
+    }
+    
+    .ranking-content-pic{
+        margin-right: 10px;
+    }
+    
+    .ranking-describe{
+        width: 350px;    
+    }
+    
+    .ranking-describe img{
+        width: 20px;
+    }
+
+    .Recommend{
+        width: 1200px;
+    }
+    
+    .recommend-card{
+        width: 350px;
+    }
+    
+    .recommend-card h3{
+        top: 30px;
+        left: 20px;
+    }
+    
+    .recommend-card p{
+        top: 80px;
+        left: 20px;
+    }
+    
+    .recommend-card label{
+        bottom: 30px;
+        left: 20px;
+        font-size: 16px;  
+    }
+
+    .where-card{
+        margin: auto;
+        width: 250px;
+    }
+    
+    .where-card p{
+        bottom: 0px;
+        left: 20px;
+        font-size: 26px;
+    }
+
+    .Strategy{
+        width: 1200px;
+    }
+    
+    .strategy-card{
+        width: 30%;
+    }
+    
+    .strategy-card label{
+        font-size: 16px;
+    }
+
+    .partner-group, .media-group{
+        width: 1200px;
+    }
+    
+    .partner-group a{
+        width: 10%;
+        margin: 10px;
+    }
+    
+    .media-group a{
+        width: 10%;
+        margin: 10px;
+    }
+    
+    .popular-group h3{
+        margin-left: 50px;
+    }
+
+    .popular-group ul{
+        margin-left: 10px;
+    }
+
+    .popular-group a{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+}

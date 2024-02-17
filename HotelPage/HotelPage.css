@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "微軟正黑體","黑體";
+}
+
+h2{
+    font-size: 16px;
+    margin: 25px 0 10px 0px;
+}
+
+h3{
+    font-size: 14px;
+}
+
+img{
+    vertical-align: top;
+}
+
+.HotelPage{
+    width: 368px;
+    max-width: 1200px;
+    margin: auto;
+    outline: 1px solid black;
+    position: relative;
+    top: -35px;
+}
+
+.Banner{
+    background-image:linear-gradient(to top,rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),url(HotelPageImage/Banner.jpg);
+    background-size: cover;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Banner h1{
+    color: white;
+    padding-left: 25px;
+    font-weight: 700;
+}
+
+.Banner p{
+    display: none;
+}
+
+.Hotel-Search{
+    padding: 0 20px;
+}
+
+.hotel-Search-group{
+    padding: 20px;
+    border-radius: .5em;
+    box-shadow: 0px 5px 10px 5px rgb(215, 215, 215);
+    background-color: white;
+}
+
+.Hotel-Search label{
+    border-radius: .5em;
+    background-color: rgb(225, 225, 225);
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.Hotel-Search label:hover{
+    cursor: pointer;
+    background-color: rgba(115, 204, 204, 0.42);
+}
+
+.Hotel-Search label{
+    display: block;
+}
+
+.hotel-search-destination label{
+    color: rgb(115, 115, 115);
+}
+
+.hotel-search-destination p{
+    margin-bottom: 5px;
+}
+
+::placeholder{
+    color: rgb(165, 165, 165);
+}
+
+.Hotel-Search:first-child{
+    font-size: 10px;
+    color: rgb(115, 115, 115);
+}
+
+.Hotel-Search p{
+    font-size: 12px;
+    font-weight: 900;
+    color: black;
+}
+
+.Hotel-Search label p:first-child{
+    font-size: 10px;
+    color: gray;
+}
+
+.Hotel-Search input{
+    border:none;
+    width: 100%;
+    color: black;
+    background-color:transparent;
+}
+
+.Hotel-Search .search-btn{
+    width: 100%;
+    border-radius: .5em;
+    background-color: #FF5B00;
+    border: none;
+    color: white;
+    padding: 10px 0;
+    margin: 10px auto;
+}
+
+.Hotel-Search button:hover{
+    cursor: pointer;
+}
+
+.popular-destination{
+    padding: 10px;
+    display: none;
+    border-radius: .5em;
+    box-shadow: 0 1px 1px 1px rgb(150, 150, 150);
+}
+
+.popular-destination ul{
+    list-style: none;
+    margin-top: 5px;
+}
+
+.popular-destination button{
+    background-color: transparent;
+    border: none;
+    font-size: 11px;
+    color: gray;
+    margin: 0 5px;
+}
+
+.number-people{
+    padding-left: 10px;
+    border-radius: .5em;
+    display: none;
+    border-radius: .5em;
+    box-shadow: 0 1px 1px 1px rgb(150, 150, 150);
+}
+
+#room-check, #destination-check{
+    display: none;
+}
+
+#room-check:checked ~ .number-people{
+    display: block;
+}
+
+#destination-check:checked ~ .popular-destination{
+    display: block;
+}
+
+.number-people .room, .aldult, .child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    padding: 15px 0;
+}
+
+.number-people div:last-child{
+    border: none;
+}
+
+.number-btn{
+    display: flex;
+    align-items: center;
+}
+
+.Hotel-Search .number-people .number-btn button{
+    width: 25px;
+    border-radius: .3em;
+    color: #FF5B00;
+    background-color: white;
+    border:1px solid #FF5B00;
+    margin:auto 10px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.number-people .number-btn p{
+    width: 30px;
+    text-align: center;
+}
+
+.Hotel-Feature{
+    padding: 0 20px;
+}
+
+.hotel-feature-group{
+    
+    margin: auto;
+    border-radius: .5em;
+}
+
+.hotel-feature-card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.hotel-feature-card:last-child{
+    border-bottom: none;
+}
+
+.hotel-feature-pic{
+    width: 20%;
+}
+
+.hotel-feature-pic img{
+    width: 100%;   
+}
+
+.hotel-feature-text{
+    width: 80%;
+    line-height: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.hotel-feature-text p{
+    font-size: 11px;
+    color: gray;
+}
+
+.Stay{
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.stay-group{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    align-items: center;
+    background-color: #F1EEFA;
+    border-radius: 1em;
+}
+
+.stay-content{
+    width: 60%;
+    padding-left: 15px;
+}
+
+.stay-icon img{
+    width: 50%;
+}
+
+.stay-pic{
+    width: 40%;
+}
+
+.stay-pic img{
+    width: 100%;
+}
+
+.Hotel-Discount{
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.hotel-discount-group{
+    margin: auto;
+}
+
+.hotel-discount-pic{
+    /* width: 100px; */
+    margin: 10px 0;
+}
+
+.hotel-discount-pic img{
+    width: 100%;
+    border-radius: .5em;
+}
+
+.Question{
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.question-group{
+    border-radius: .5em;
+    box-shadow: 0px 5px 10px 5px rgb(215, 215, 215);
+}
+
+#accordionFlushExample{
+    width: 90%;
+    margin: auto;
+}
+
+.accordion-body li{
+    list-style: decimal;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.more{
+    outline: 1px solid black;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: .3em;
+    padding: 5px 0;
+    font-size: 12px;
+}
+
+.Popular{
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.popular-group a{
+    list-style: none;
+    display: inline-block;
+    font-size: 8px;
+    border-right: 1px solid gray;
+    padding-right: 5px;  
+    text-decoration: none;
+    color: gray;
+}
+
+.popular-group a:nth-last-child(1){
+    border-right: 0px solid gray;
+}
+
+.popular-group h3{
+    margin-left: 30px;
+}
+
+@media screen and (min-width:1200px) {
+    .HotelPage{
+        width: 1200px;
+        outline: 1px solid black;
+        top: -75px;
+    }
+
+    .Banner{
+        background-image:url(HotelPageImage/Banner.jpg);
+        height: 320px;
+    }
+
+    .Banner h1{
+        font-size: 64px;
+        padding-left: 150px;
+    }
+    
+    .Banner p{
+        display: initial;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        padding: 0 0 65px 150px;
+        line-height: 50px;
+    }
+
+    .Hotel-Search{
+        padding: 0 20px;
+    }
+    
+    .hotel-Search-group{
+        display: flex;
+    }
+    
+    .Hotel-Search label{
+        width: 100%;
+        margin: 10px 10px;
+        padding: 5px;
+    }
+    
+    .Hotel-Search label:hover{
+        cursor: pointer;
+        background-color: rgba(115, 204, 204, 0.42);
+    }
+    
+    .Hotel-Search label{
+        display: block;
+    }
+    
+    .hotel-search-destination label{
+        color: rgb(115, 115, 115);
+    }
+    
+    .hotel-search-destination p{
+        margin-bottom: 5px;
+    }
+    
+    ::placeholder{
+        color: rgb(165, 165, 165);
+    }
+    
+    .Hotel-Search:first-child{
+        font-size: 10px;
+        color: rgb(115, 115, 115);
+    }
+    
+    .Hotel-Search p{
+        font-size: 12px;
+        font-weight: 900;
+        color: black;
+    }
+    
+    .Hotel-Search label p:first-child{
+        font-size: 10px;
+        color: gray;
+    }
+    
+    .Hotel-Search input{
+        border:none;
+        width: 100%;
+        color: black;
+        background-color:transparent;
+    }
+    
+    .Hotel-Search .search-btn{
+        width: 100%;
+        border-radius: .5em;
+        background-color: #FF5B00;
+        border: none;
+        color: white;
+        padding: 10px 0;
+        margin: 10px auto;
+    }
+    
+    .Hotel-Search button:hover{
+        cursor: pointer;
+    }
+}

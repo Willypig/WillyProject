@@ -492,7 +492,7 @@ p{
 
 @media screen and (min-width:1200px) {
     .HomePage{
-        outline: 1px solid black;
+        /* outline: 1px solid black; */
     }
     
     h2{
